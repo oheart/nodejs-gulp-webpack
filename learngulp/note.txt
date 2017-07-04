@@ -1,0 +1,94 @@
+一、
+1.npm init    自动生成在项目下生成package.json
+2.npm install -g       安装到全局目录里（同时会配到环境变量里），如果不加-g会安装到当前项目目录下
+3.npm  config get prefix      查看全局目录
+4.echo %PATH%    查看环境变量
+5.npm install -g gulp     全局安装gulp
+6.npm install gulp --save-dev (在当前项目也要装一次，因为我们要使用require("gulp")),
+  --save-dev是开发时依赖的库，--save是发布之后还依赖的库
+7.gulp -v  查看gulp版本
+8.npm install 会自动下载缺失的依赖包（在package.json配置的）
+9.gulp + 任务名   执行gulp任务
+
+
+二、
+1.在命令行中读取文件并显示在屏幕上
+  windows :
+      type 文件名
+  Linux:
+      cat 文件名
+2.查找字符串并列出内容
+  windows:
+    findstr 关键字 文件名
+  Linux:
+    grep 关键字 文件名
+3.利用管道
+  如果我要在某个文件中根据关键词查询，那么两者命令就可以通过管道（pipe）的方式组合使用。
+  管道符"|"
+
+   windows:
+        type 文件名 | findstr 关键词
+
+   Linux:
+        cat 文件名 | grep 关键词
+4.gulp里面管道用法
+  gulp.src(["1.js","2.js"]).pipe(gulp.dest("文件夹名"));
+
+  还可以使用通配符(!是排除的意思)
+  gulp.src(["*.js","!2.js"]).pipe(gulp.dest("文件名"));
+
+5.合并插件
+  npm  install gulp-concat --save-dev
+
+  var concat = require("gulp-concat"); //引用
+  gulp.src([这里写上js]).pipe(concat("xxx.js")).pipe(gulp.dest("目录"));
+
+6.压缩插件
+  npm install gulp-uglify --save-dev
+
+  var uglify = require("gulp-uglify");
+  uglify()既可以，不需要参数
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
