@@ -1,1 +1,1 @@
-console.log('Œ“ «2.js');
+console.log('2.js');

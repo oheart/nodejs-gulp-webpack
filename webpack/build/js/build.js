@@ -1,0 +1,1 @@
+!function(o){function n(t){if(e[t])return e[t].exports;var c=e[t]={exports:{},id:t,loaded:!1};return o[t].call(c.exports,c,c.exports,n),c.loaded=!0,c.exports}var e={};n.m=o,n.c=e,n.p="",n(0)}([function(o,n,e){o.exports=e(1)},function(o,n,e){(function(o){e(2);console.log(o)}).call(n,"/")},function(o,n){n.age=18,n.showName=function(){console.log("showName")}}]);

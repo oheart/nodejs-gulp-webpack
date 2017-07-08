@@ -1,0 +1,7 @@
+一、webpack--模块打包
+它能帮我们把本来需要在服务端运行的js代码，通过模块的引用和依赖打包成前端可用的静态文件。
+
+npm install -g webpack 全局安装
+
+二、webpack和gulp相结合
+1.npm install gulp-webpack --save-dev 关联gulp和webpack的插件

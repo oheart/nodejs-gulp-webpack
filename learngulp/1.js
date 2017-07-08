@@ -1,4 +1,4 @@
 var name = 'zhansan';
 var age = 19;
 var myname = 'shenyi';
-console.log('Œ“ «1.js');
+console.log('1.js');
